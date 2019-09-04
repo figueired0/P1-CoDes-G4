@@ -2,6 +2,7 @@
 ------------------------------------------------
 
 O projeto, proposto pela matéria de Co-design da universidade Insper, tem como objetivo, projetar e criar um site utilizando as linguagem de programação: html, css e JavaScript.
+
 Para isso, o projeto contou com a colaboração dos membros de um grupo formado por:
 - Beatriz Rianho Bernardino,
 - Igor Figueiredo, igorf1@insper.edu.br
