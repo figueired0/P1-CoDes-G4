@@ -50,6 +50,8 @@
 .subitem {
   padding: 1rem;
   transition: background-color .25s, color .25s;
+  color: white;
+  text-decoration: none;
 }
 .subitem:hover {
   background-color: #5a808c;

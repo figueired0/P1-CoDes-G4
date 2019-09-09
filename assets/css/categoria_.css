@@ -39,17 +39,24 @@
   width: 100%;
   border: 1px solid white;
   background-color: #405a63;
-  display: none;
+  display:none;
+
 }
 
 .subitem {
   padding: 1rem;
   transition: background-color .25s, color .25s;
+  color: white;
+  text-decoration: none;
+
 }
+
 .subitem:hover {
   background-color: #5a808c;
   color: white;
   font-family: 'EB Garamond', serif;
+  
+
 }
 
 .header-items-list {
@@ -238,6 +245,8 @@
   .linkquadrado1{
 
    font-family: 'Montserrat', sans-serif;
+   color: #405a63;
+   text-decoration: none;
 
    }
 
@@ -269,6 +278,8 @@
   .linkquadrado2{
 
     font-family: 'Montserrat', sans-serif;
+    color: #405a63;
+    text-decoration: none;
 
   }
 
@@ -286,7 +297,11 @@
 
   }
 
+.links{
 
+ color: #405a63;
+ text-decoration: none;
+}
 
   @media (max-width: 414px) {
     .categoria {
@@ -344,6 +359,8 @@
   .linkquadrado1{
 
    font-family: 'Montserrat', sans-serif;
+   color: #405a63;
+   text-decoration: none;
 
    }
 
@@ -374,6 +391,8 @@
   .linkquadrado2{
 
     font-family: 'Montserrat', sans-serif;
+    color: #405a63;
+    text-decoration: none;
 
   }
 
@@ -390,6 +409,12 @@
     margin-top: 0.5rem;
     text-align: center;
     font-family: 'EB Garamond', serif;
+  }
+
+   .links{
+
+  color: #405a63;
+  text-decoration: none;
 
   }
 
