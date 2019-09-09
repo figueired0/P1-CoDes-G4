@@ -1,0 +1,275 @@
+
+/*projeto*/
+.main {
+
+}
+
+.header {
+  padding: .5rem;
+  color: white;
+  background-color: #405a63;
+  box-shadow: 0 0 5px;
+  display: flex;
+}
+
+.item-menu {
+  color: white;
+  text-align: center;
+}
+
+.menu{
+  margin-top: -1rem;
+}
+
+.itemm {
+  flex-grow: 1;
+}
+
+.item:hover .submenu {
+  display: block;
+}
+
+.title {
+  padding: 1rem;
+  transition: background-color .25s, color .25s;
+}
+.title:hover {
+  color: white;
+}
+
+.submenu {
+  position: absolute;
+  top: 3rem;
+  left: 0rem;
+  width: 100%;
+  border: 1px solid white;
+  background-color: #405a63;
+  display: none;
+}
+
+.subitem {
+  padding: 1rem;
+  transition: background-color .25s, color .25s;
+}
+.subitem:hover {
+  background-color: #5a808c;
+  color: white;
+  /* ------------------- COLOCAR FONTE PRA FICAR BRANCO */
+}
+
+.header-items-list {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -5rem;
+}
+
+.item-nome {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item-curriculo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item-procurar {
+  display: inline-flex;
+  align-items: center;
+}
+
+.lupa-image, .curriculo-image {
+  margin-left: 1rem;
+}
+
+.usuario-image {
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.lupa-image, .curriculo-image, .usuario-image {
+  height: 2rem;
+}
+
+.header-items {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+
+}
+
+.menu-text {
+  display: flex;
+  align-items: center;
+}
+
+.menu-image {
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+  /* ------------------- COLOCAR FONTE PRA FICAR BRANCO */
+}
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.menu-image {
+  height: 2rem;
+}
+
+.footer, .text-footer {
+  padding: .5rem;
+  color: white;
+  background-color: #405a63;
+  justify-content: space-evenly;
+  display: flex;
+  flex-grow: 1;
+}
+
+
+
+.cover {
+  flex-direction: row;
+  width: 100%;
+}
+
+.capa {
+  width: 100%;
+}
+
+.projeto_n {
+  flex-direction: row;
+}
+
+.colunas {
+  flex-direction: column;
+}
+
+
+.colunas_desc {
+  flex-direction: column;
+}
+
+.link_line {
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.link_line:hover {
+  text-decoration: underline;
+}
+
+.item, .item0, .item1, .link_line {
+  background: #eaeae1;
+  flex: 1;
+  margin: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #405a63;
+}
+
+.item0 {
+  font-family: 'Montserrat', sans-serif;
+  color: #405a63;
+  background: white;
+}
+
+.item1 {
+  font-family: 'EB Garamond', serif;
+}
+
+.item2 {
+  background: #eaeae1;
+}
+
+.container-pai{
+  display: flex;
+
+
+
+}
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  border: 0px;
+  padding: 8px;
+}
+
+.container2 {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  border: 0px;
+  padding: 8px;
+}
+
+
+@media (max-width: 360px) {
+.container-pai{
+  display: grid;
+  grid-template-columns: 1fr;
+
+  }
+  
+
+}
+
+@media (max-width: 68rem) {
+  .main {
+    padding: 2rem;
+  }
+}
+
+
+@media (max-width: 49rem) {
+  .menu-title {
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    display: block;
+  }
+  .menu-title {
+    display: none;
+  }
+  .menu-figure {
+    display: block;
+  }
+
+  .procurar-texto, .curriculo-texto {
+    display: none;
+  }
+
+
+  .menu-image {
+    height: 2rem;
+  }
+
+  .usuario-image{
+    display: block;
+  }
+
+  .curriculo-image {
+    display: none;
+  }
+
+  .menu-list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 4rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+}
