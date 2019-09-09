@@ -1,0 +1,397 @@
+
+  .header {
+  padding: .5rem;
+  color: white;
+  background-color: #405a63;
+  box-shadow: 0 0 5px;
+  display: flex;
+}
+
+.item-menu {
+  color: white;
+  text-align: center;
+}
+
+.menu{
+  margin-top: -1rem;
+}
+
+.item {
+  flex-grow: 1;
+}
+
+.item:hover .submenu {
+  display: block;
+}
+
+.title {
+  padding: 1rem;
+  transition: background-color .25s, color .25s;
+}
+.title:hover {
+  color: white;
+}
+
+.submenu {
+  position: absolute;
+  top: 3rem;
+  left: 0rem;
+  width: 100%;
+  border: 1px solid white;
+  background-color: #405a63;
+  display: none;
+}
+
+.subitem {
+  padding: 1rem;
+  transition: background-color .25s, color .25s;
+}
+.subitem:hover {
+  background-color: #5a808c;
+  color: white;
+  font-family: 'EB Garamond', serif;
+}
+
+.header-items-list {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -5rem;
+}
+
+.item-nome {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item-curriculo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item-procurar {
+  display: inline-flex;
+  align-items: center;
+}
+
+.lupa-image, .curriculo-image {
+  margin-left: 1rem;
+}
+
+.usuario-image {
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.lupa-image, .curriculo-image, .usuario-image {
+  height: 2rem;
+}
+
+.header-items {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+
+}
+
+.menu-text {
+  display: flex;
+  align-items: center;
+}
+
+.menu-image {
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+  font-family: 'EB Garamond', serif;
+}
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.menu-image {
+  height: 2rem;
+}
+
+.footer, .text-footer {
+  padding: .5rem;
+  color: white;
+  background-color: #405a63;
+  justify-content: space-evenly;
+  display: flex;
+  flex-grow: 1;
+}
+
+
+@media (max-width: 68rem) {
+  .main {
+    padding: 2rem;
+  }
+}
+
+
+@media (max-width: 49rem) {
+  .menu-title {
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    display: block;
+  }
+  .menu-title {
+    display: none;
+  }
+  .menu-figure {
+    display: block;
+  }
+
+  .procurar-texto, .curriculo-texto {
+    display: none;
+  }
+
+
+  .menu-image {
+    height: 2rem;
+  }
+
+  .usuario-image{
+    display: block;
+  }
+
+  .curriculo-image {
+    display: none;
+  }
+
+  .menu-list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 4rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+} 
+
+
+  .categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+  }
+
+  .image {
+    border: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  .text {
+    margin: 2em;
+    color: #405a63;
+    font-size: 2em;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+  }
+
+  .introducao {
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-family: 'EB Garamond', serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+   }
+
+  .quadrado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 1rem;
+
+
+    
+  }
+
+  .quadrado1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #405a63;
+    border-radius: 0.5rem;
+  }
+
+  .linkquadrado1{
+
+   font-family: 'Montserrat', sans-serif;
+
+   }
+
+  .quadrado1-image{
+    margin: 1em;
+    border: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .quadrado1-text{
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    margin-right: 0.7rem;
+
+  }
+  .quadrado2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    list-style: none;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #405a63;
+    border-radius: 0.5rem;
+  }
+
+  .linkquadrado2{
+
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .quadrado2-image{
+    margin: 1em;
+    border: 0.5rem;
+    border-radius: 0.5rem;
+
+  }
+
+  .quadrado2-text{
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    margin-right: 0.7rem;
+
+  }
+
+
+
+  @media (max-width: 414px) {
+    .categoria {
+    display: flex;
+    flex-direction: column;
+    border: 0rem;
+
+    
+   
+  }
+
+  .image {
+    margin-top: -0rem;
+    opacity : 0.1;
+    width: 100%;
+  }
+
+  .text {
+    margin-top: -150px;
+    margin-bottom: 100px;
+    color: #405a63;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  .introducao {
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    font-family: 'EB Garamond', serif;
+
+    
+   }
+
+  .quadrado{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-direction: column;
+
+  }
+
+  .quadrado1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.8rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #405a63;
+    border-radius: 0.5rem;
+  }
+
+  .linkquadrado1{
+
+   font-family: 'Montserrat', sans-serif;
+
+   }
+
+  .quadrado1-image{
+    margin: 0.5rem;
+    border: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .quadrado1-text{
+    margin-right: 0.5rem;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+
+  }
+  .quadrado2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.8rem;
+    list-style: none;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #405a63;
+    border-radius: 0.5rem;
+  }
+
+  .linkquadrado2{
+
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .quadrado2-image{
+    margin: 0.5rem;
+    border: 0.5rem;
+    border-radius: 0.5rem;
+
+  }
+
+  .quadrado2-text{
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+
+  }
+
+
+  }

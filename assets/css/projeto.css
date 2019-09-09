@@ -54,7 +54,7 @@
 .subitem:hover {
   background-color: #5a808c;
   color: white;
-  /* ------------------- COLOCAR FONTE PRA FICAR BRANCO */
+  font-family: 'EB Garamond', serif;
 }
 
 .header-items-list {
@@ -110,7 +110,7 @@
 .menu-link {
   text-decoration: none;
   color: white;
-  /* ------------------- COLOCAR FONTE PRA FICAR BRANCO */
+  font-family: 'EB Garamond', serif;
 }
 .menu-link:hover {
   text-decoration: underline;
