@@ -216,7 +216,7 @@
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 414px) {
 .container-pai{
   display: grid;
   grid-template-columns: 1fr;
@@ -226,7 +226,7 @@
 
 }
 
-@media (max-width: 68rem) {
+@media (max-width: 414px) {
   .main {
     padding: 2rem;
   }
