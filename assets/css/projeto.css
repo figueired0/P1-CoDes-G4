@@ -233,7 +233,7 @@
 }
 
 
-@media (max-width: 49rem) {
+@media (max-width: 414px) {
   .menu-title {
     font-weight: bold;
     text-align: center;
