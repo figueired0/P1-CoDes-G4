@@ -9,10 +9,13 @@
   <link href="assets/css/index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/index.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-</head>
 
+
+</head>
 <body class="body">
 
  <header class="header">
@@ -22,10 +25,11 @@
       <li class="item">
         <p class="title">Menu</p>
         <ul class="submenu">
-          <li class="subitem"><a href="categoria.html"> Design </a></li>
-          <li class="subitem"><a href="categoria.html"> Elétrica </a></li>
-          <li class="subitem"><a href="categoria.html"> Matemática </a></li>
-          <li class="subitem"><a href="categoria.html"> Programcação </a></li>
+          {{#each portfolio}}
+          <li class="subitem"><a href="categoria.html?key={{@key}}"> {{this.categoria}} </a></li>
+          {{/each}}
+          
+
         </ul>
       </li>
     </ul>
@@ -73,62 +77,23 @@
 </p>
 <hr/>
 <ul class="categoriasproj">
-
+{{#each portfolio}}
   <li class="categoria">
     <figure class="figure">
-      <img class="imagem" src="assets/img/des.jpeg" alt="lâmpada">
+      <img class="imagem" src="assets/img/{{this.categoria}}.jpeg" alt="{{this.categoria}}">
     </figure>  
     <div class="desc">
       <h2 class="titulo">
-        <a class="links" href="categoria.html"> Categoria de Design</a>
+        <a class="links" href="categoria.html?key={{@key}}">{{this.categoria}}</a>
       </h2>
       <p class='bodydes'>
-        Nesta seção você encontrará todos os Projetos de Design.
+        {{this.descricao}}.
       </p>
     </div>
   </li>
-
-  <li class="categoria">
-    <figure class="figure">
-      <img class="imagem" src="assets/img/mat.jpeg" alt="formulas de matemática">
-    </figure>
-    <div class="desc">
-      <h2 class="titulo">
-        <a class="links" href="categoria.html"> Categoria de Matemática</a>
-      </h2>
-      <p class="bodydes">
-        Nesta seção você encontrará todos os Projetos de matemática.
-      </p>
-    </div>
-  </li>
-
-  <li class="categoria">
-    <figure class="figure">
-      <img class="imagem" src="assets/img/eletrica.jpeg" alt="raio">
-    </figure>  
-    <div class="desc">
-      <h2 class="titulo">
-        <a class="links" href="categoria.html"> Categoria de Elétrica</a>
-      </h2>
-      <p class="bodydes">
-        Nesta seção você encontrará todos os Projetos de elétrica
-      </p>
-    </div>
-  </li>
-  <li class='categoria'>
-    <figure class="figure">
-      <img class="imagem" src="assets/img/prog.jpeg" alt="site">
-    </figure>  
-    <div class="desc">
-      <h2 class="titulo">
-        <a class="links" href="categoria.html"> Categoria de Programação</a>  
-      </h2>
-      <p class="bodydes">
-        Nesta seção você encontrará todos os Projetos de programação.
-      </p>
-    </div>  
-  </li> 
+  {{/each}}
 </ul> 
+
 </main>
 <footer>
   <div class="footer">
