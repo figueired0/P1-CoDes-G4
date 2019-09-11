@@ -1,5 +1,5 @@
 
-  .header {
+ .header {
   padding: .5rem;
   color: white;
   background-color: #405a63;
@@ -30,6 +30,7 @@
 }
 .title:hover {
   color: white;
+  text-decoration: none;
 }
 
 .submenu {
@@ -39,8 +40,7 @@
   width: 100%;
   border: 1px solid white;
   background-color: #405a63;
-  display:none;
-
+  display: none;
 }
 
 .subitem {
@@ -48,15 +48,11 @@
   transition: background-color .25s, color .25s;
   color: white;
   text-decoration: none;
-
 }
-
 .subitem:hover {
   background-color: #5a808c;
   color: white;
   font-family: 'EB Garamond', serif;
-  
-
 }
 
 .header-items-list {
@@ -131,7 +127,6 @@
   flex-grow: 1;
 }
 
-
 @media (max-width: 68rem) {
   .main {
     padding: 2rem;
@@ -139,8 +134,9 @@
 }
 
 
-@media (max-width: 49rem) {
-  .menu-title {
+@media (max-width: 414px) {
+
+ .menu-title {
     font-weight: bold;
     text-align: center;
     flex-grow: 1;
@@ -176,11 +172,7 @@
     justify-content: space-evenly;
     margin-left: 4rem;
   }
-
-  .main {
-    padding: 1rem;
-  }
-} 
+}
 
 
   .categoria {
