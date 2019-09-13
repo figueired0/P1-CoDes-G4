@@ -25,7 +25,7 @@
   flex-grow: 1;
 }
 
-.itemm-menu:hover .submenu {
+.item-menu:hover .submenu {
   display: block;
   width: 15rem;
 }
