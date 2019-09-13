@@ -28,6 +28,7 @@
 .item-menu:hover .submenu {
   display: block;
   width: 15rem;
+
 }
 
 .title {
@@ -36,6 +37,7 @@
 }
 .title:hover {
   color: white;
+  text-decoration: none;
 }
 
 .submenu {
@@ -51,15 +53,18 @@
 .subitem {
   padding: 1rem;
   transition: background-color .25s, color .25s;
-}
-
-.link_menu{
   color: white;
   text-decoration: none;
 }
+.link_menu{
+  color: white;
+  text-decoration: none;
 
+ 
+}
 .subitem:hover {
   background-color: #5a808c;
+  color: white;
   font-family: 'EB Garamond', serif;
 }
 
