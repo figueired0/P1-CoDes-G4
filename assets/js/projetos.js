@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var url=new URL(url_str);
   var c = url.searchParams.get("key");
-  var p = url.searchParams.get("key");
-  alert(p);
+  var p = url.searchParams.get("pr");
   db.download('/', function(data) {
     context = data
     console.log(context)
     coDesReplace('.submenu', context)
-    coDesReplace('.categoria', data["portfolio"][c])
-    coDesReplace('.quadrado', data["portfolio"][c])
+    // coDesReplace('.categoria', data["portfolio"][c])
+    // coDesReplace('.quadrado', data["portfolio"][c])
+    coDesReplace('.item', data["portfolio"][c][p])
 
 
 
