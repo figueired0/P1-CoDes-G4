@@ -25,8 +25,9 @@
   flex-grow: 1;
 }
 
-.itemm:hover .submenu {
+.itemm-menu:hover .submenu {
   display: block;
+  width: 15rem;
 }
 
 .title {
@@ -53,9 +54,14 @@
   color: white;
   text-decoration: none;
 }
+
+.link_menu{
+  padding: 1rem;
+  text-decoration: none;
+}
+
 .subitem:hover {
   background-color: #5a808c;
-  color: white;
   font-family: 'EB Garamond', serif;
 }
 
