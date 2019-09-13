@@ -20,8 +20,9 @@
   flex-grow: 1;
 }
 
-.item:hover .submenu {
+.item-menu:hover .submenu {
   display: block;
+  width: 15rem;
 }
 
 .title {
@@ -46,9 +47,13 @@
 .subitem {
   padding: 1rem;
   transition: background-color .25s, color .25s;
+}
+
+.link_menu{
   color: white;
   text-decoration: none;
 }
+
 .subitem:hover {
   background-color: #5a808c;
   color: white;
