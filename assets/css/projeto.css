@@ -51,8 +51,6 @@
 .subitem {
   padding: 1rem;
   transition: background-color .25s, color .25s;
-  color: white;
-  text-decoration: none;
 }
 
 .link_menu{
@@ -140,8 +138,6 @@
 .footer{
   margin-top: 6.4rem;
 }
-
-
 
 
 .cover {
