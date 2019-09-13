@@ -7,47 +7,46 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 		<script src="assets/js/codes.js"></script>
- 	    <script src="assets/js/categoria.js"></script>
+		<script src="assets/js/categoria.js"></script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 	</head>
 
 	<body>
-	  <header class="header">
-		  <figure class="item-menu">
-		    <img class="menu-image" src="assets/img/menu.png" alt="Abrir Menu">
-		    <ul class="menu">
-		      <li class="item">
-		        <p class="title">Menu</p>
-		        <ul class="submenu">
-		          <li class="subitem"><a class="link_menu" href="categoria.html"> Design </a></li>
-		          <li class="subitem"><a class="link_menu" href="categoria.html"> Elétrica </a></li>
-		          <li class="subitem"><a class="link_menu" href="categoria.html"> Matemática </a></li>
-		          <li class="subitem"><a class="link_menu" href="categoria.html"> Programcação </a></li>
-		        </ul>
-		      </li>
-		    </ul>
-		  </figure>
-		  <nav class="header-items">
-		    <div class="header-items-list">
-		      <figure class="item-nome">
-		        <a href="index.html"><img class="usuario-image" src="assets/img/Perfil.jpg" alt="Imagem do Usuário"></a>
-		        <p class="header-items">Nome</p>
-		      </figure>
-		      <figure class="item-curriculo">
-		        <div class="curriculo-texto">
-		          <p class="header-items">Currículo</p>
-		        </div>
-		        <img class="curriculo-image" src="assets/img/curriculo.png" alt="Imagem currículo">
-		      </figure>
-		      <figure class="item-procurar">
-		        <div class="procurar-texto">
-		          <p class="header-items">Procurar</p>
-		        </div>
-		        <img class="lupa-image" src="assets/img/lupa.png" alt="Imagem procurar">
-		      </figure>
-		    </div>
-		  </nav>
+		<header class="header">
+			<figure class="item-menu">
+				<img class="menu-image" src="assets/img/menu.png" alt="Abrir Menu">
+				<ul class="menu">
+					<li class="item">
+						<p class="title">Menu</p>
+						<ul class="submenu">
+							{{#each portfolio}}
+							<li class="subitem"><a class="link_menu" href="categoria.html?key={{@key}}"> {{this.categoria}} </a></li>
+							{{/each}}
+						</ul>
+					</li>
+				</ul>
+			</figure>
+			<nav class="header-items">
+				<div class="header-items-list">
+					<figure class="item-nome">
+						<a href="index.html"><img class="usuario-image" src="assets/img/Perfil.jpg" alt="Imagem do Usuário"></a>
+						<p class="header-items">Nome</p>
+					</figure>
+					<figure class="item-curriculo">
+						<div class="curriculo-texto">
+							<p class="header-items">Currículo</p>
+						</div>
+						<img class="curriculo-image" src="assets/img/curriculo.png" alt="Imagem currículo">
+					</figure>
+					<figure class="item-procurar">
+						<div class="procurar-texto">
+							<p class="header-items">Procurar</p>
+						</div>
+						<img class="lupa-image" src="assets/img/lupa.png" alt="Imagem procurar">
+					</figure>
+				</div>
+			</nav>
 		</header>
 
 
@@ -100,21 +99,21 @@
 			</div> 
 		</div>
 		<footer>
-	     	<div class="footer">
-	        	<p class="text-footer">
-	                    Contato
-	            </p>
-	            <p class="text-footer">
-	                    Sobre               
-	            </p>
-	            <p class="text-footer">
-	                    Idiomas
-	            </p>
-	            <p class="text-footer">
-	                    Reparar
-	            </p>
-	        </div>
-	    </footer>
+			<div class="footer">
+				<p class="text-footer">
+					Contato
+				</p>
+				<p class="text-footer">
+					Sobre               
+				</p>
+				<p class="text-footer">
+					Idiomas
+				</p>
+				<p class="text-footer">
+					Reparar
+				</p>
+			</div>
+		</footer>
 
 	</body>
 	</html>
