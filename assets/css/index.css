@@ -20,8 +20,10 @@
   flex-grow: 1;
 }
 
-.item:hover .submenu {
+.item-menu:hover .submenu {
   display: block;
+  width: 15rem;
+
 }
 
 .title {
@@ -48,6 +50,12 @@
   transition: background-color .25s, color .25s;
   color: white;
   text-decoration: none;
+}
+.link_menu{
+  color: white;
+  text-decoration: none;
+
+ 
 }
 .subitem:hover {
   background-color: #5a808c;
@@ -148,6 +156,7 @@
 
 .figure1{
   width: 33%;
+  
 
 }
 .imagem1{
@@ -160,7 +169,6 @@
 .biografia{
  max-width: 20rem;
  padding-left: 2rem;
- text-align: justify;
  width: 33%;
 
 }
@@ -180,6 +188,13 @@
   font-size: 1rem;
   padding-left: 12rem;
   align-self: center;
+ 
+
+}
+
+.introdu{
+  justify-content: center;
+
 }
 
 .links{
@@ -328,6 +343,9 @@ hr {
   grid-template-columns: 1fr;
 
 }
+.introdu{
+  display: none;
+}
 
 .imagem{
 
@@ -341,7 +359,8 @@ hr {
 .categoria{
   padding: 0rem;
   display: flex;
-  margin-top: 3rem;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
 }
 
 .desc{
@@ -360,10 +379,9 @@ hr {
     display: block;
     height: 0.1rem;
     border: 0;
-    border-top: 0.15rem solid #405a63 ;
-    margin: 1rem 0;
-    padding: 0;
-   
+    border-top: 0.15rem solid #eaeae1 ;
+    margin: 2rem 0;
+    padding: 0;  
 }    
 
 

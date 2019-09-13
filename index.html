@@ -26,7 +26,7 @@
         <p class="title">Menu</p>
         <ul class="submenu">
           {{#each portfolio}}
-          <li class="subitem"><a href="categoria.html?key={{@key}}"> {{this.categoria}} </a></li>
+          <li class="subitem"><a class="link_menu" href="categoria.html?key={{@key}}"> {{this.categoria}} </a></li>
           {{/each}}
           
 
@@ -72,10 +72,12 @@
      </p>
    </div>
  </div>
+ <div class="introdu">
  <p class="texto_intro">
   Bem vindo(a) ao Guia do engenheiro. Aqui você pode verificar os projetos reliazados cujo estão classificados pelas seguintes categorias:      
 </p>
-<hr/>
+</div>
+<hr>
 <ul class="categoriasproj">
 {{#each portfolio}}
   <li class="categoria">
