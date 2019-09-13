@@ -65,6 +65,7 @@
 .item-nome {
   display: inline-flex;
   align-items: center;
+  margin-left: 3rem;
 }
 
 .item-curriculo {
@@ -126,6 +127,7 @@
   display: flex;
   flex-grow: 1;
 }
+
 
 @media (max-width: 68rem) {
   .main {
@@ -216,7 +218,7 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin-bottom: 1rem;
+    margin-bottom: 7rem;
 
 
     
