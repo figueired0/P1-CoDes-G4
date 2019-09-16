@@ -7,13 +7,19 @@ document.addEventListener('DOMContentLoaded', function() {
   var url=new URL(url_str);
   var c = url.searchParams.get("key");
   var p = url.searchParams.get("pr");
+
+  // alert(c);
+  // alert(p);
   db.download('/', function(data) {
     context = data
     console.log(context)
     coDesReplace('.submenu', context)
     // coDesReplace('.categoria', data["portfolio"][c])
     // coDesReplace('.quadrado', data["portfolio"][c])
-    coDesReplace('.item', data["portfolio"][c][p])
+    coDesReplace('.item', data["portfolio"][c]["projetos"][p])
+    coDesReplace('.container-pai', data["portfolio"][c]["projetos"][p])
+    
+
 
 
 

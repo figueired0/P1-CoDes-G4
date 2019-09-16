@@ -74,7 +74,20 @@
 					<img class="quadrado1-image" src="https://picsum.photos/150/200/?random" alt="lâmpada">
 					<div class="quadrado1-text">
 						<p class= "linkquadrado1">
-							<a class="links" href="projeto.html?pr={{@key}}">{{this.titulo}}</a>
+	<!-- 
+								<script>
+							    	var url_str= window.location.href;
+									var url=new URL(url_str);
+									var c = url.searchParams.get("key");
+							    	
+									// alert(c);
+
+							    									
+								</script>
+ -->
+							<a class="links" href="#" onclick="projetofunc('{{@key}}')">{{this.titulo}}</a>
+
+							<!-- <a class="links" href="projeto.html?pr={{@key}}">{{this.titulo}}</a> -->
 						</p>
 						<p>
 							{{this.descricao}}

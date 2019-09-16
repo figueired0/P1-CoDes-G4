@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var url=new URL(url_str);
   var c = url.searchParams.get("key");
-  var p = url.searchParams.get("key");
-  alert(p);
+ 	
   db.download('/', function(data) {
     context = data
     console.log(context)
@@ -21,3 +20,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 })
+
+function projetofunc(pr){
+	// alert(pr);
+
+	var url_str= window.location.href;
+  	var url=new URL(url_str);
+  	var c = url.searchParams.get("key");
+
+	// alert(c)
+
+	// window.location = '/projetos';
+	window.location.href = "projeto.html?pr=" + pr + "&key=" + c;
+
+}
