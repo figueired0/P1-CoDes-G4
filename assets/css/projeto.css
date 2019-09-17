@@ -148,10 +148,12 @@
 .cover {
   flex-direction: row;
   width: 100%;
+
 }
 
 .capa {
   width: 100%;
+  height: 15rem;
 }
 
 .projeto_n {
@@ -210,7 +212,6 @@
 .item2 {
   background: #eaeae1;
   padding: .30rem;
-  /*max-width: 1075px;*/
   
 }
 
@@ -280,6 +281,9 @@
     display: flex;
     justify-content: space-evenly;
     margin-left: 4rem;
+  }
+  .capa{
+    height: 7rem;
   }
 
 }

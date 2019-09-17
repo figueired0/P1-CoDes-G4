@@ -55,8 +55,7 @@
 
 		<div> 
 			<div class="categoria">
-				
-				<img class="image" src="https://picsum.photos/300/200/?random" alt="Foto do Usuário">
+				<img class="image" src="assets/img/{{categoria}}.jpeg" alt="{{categoria}}" >
 				<div class="text">
 					<h1>{{categoria}}</h1>
 				</div>
@@ -64,30 +63,19 @@
 			</div>
 			<div class="introducao">
 				<p>
-					Aqui você pode verificar os projetos reliazados dentro desta categoria. Para acessa-los, basta clicar nos links abaixo.
+					Aqui você pode verificar os projetos reliazados dentro desta categoria. Para acessá-los, basta clicar nos links abaixo.
 				</p>
 			</div>
 
 			<div class="quadrado">
 				{{#each projetos}}
 				<div class="quadrado1">
-					<img class="quadrado1-image" src="https://picsum.photos/150/200/?random" alt="lâmpada">
+					<img class="quadrado1-image" src="assets/img/{{this.titulo}}.jpeg" onclick="projetofunc('{{@key}}')" alt="{{this.titulo}}">
 					<div class="quadrado1-text">
 						<p class= "linkquadrado1">
-	<!-- 
-								<script>
-							    	var url_str= window.location.href;
-									var url=new URL(url_str);
-									var c = url.searchParams.get("key");
-							    	
-									// alert(c);
-
-							    									
-								</script>
- -->
 							<a class="links" href="#" onclick="projetofunc('{{@key}}')">{{this.titulo}}</a>
 
-							<!-- <a class="links" href="projeto.html?pr={{@key}}">{{this.titulo}}</a> -->
+							
 						</p>
 						<p>
 							{{this.descricao}}
@@ -96,19 +84,6 @@
 				</div>
 				{{/each}}
 				
-
-				<!-- <div class="quadrado1">
-					<img class="quadrado1-image" src="https://picsum.photos/150/200/?random" alt="raio">
-					<div class="quadrado1-text">
-						<p class="linkquadrado1">
-							<a class="links" href="projeto.html"> Dispositivo controlador de motor</a>
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt  
-						</p>
-					</div>
-				</div> -->
 			</div> 
 		</div>
 		<footer>

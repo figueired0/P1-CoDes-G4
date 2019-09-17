@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // coDesReplace('.categoria', data["portfolio"][c])
     // coDesReplace('.quadrado', data["portfolio"][c])
     coDesReplace('.item', data["portfolio"][c]["projetos"][p])
+    coDesReplace('.cover', data["portfolio"][c]["projetos"][p])
     coDesReplace('.container-pai', data["portfolio"][c]["projetos"][p])
     
 

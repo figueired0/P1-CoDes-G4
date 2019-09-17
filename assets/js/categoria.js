@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     coDesReplace('.submenu', context)
     coDesReplace('.categoria', data["portfolio"][c])
     coDesReplace('.quadrado', data["portfolio"][c])
+    
 
 
 
