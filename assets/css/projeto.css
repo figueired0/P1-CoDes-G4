@@ -167,6 +167,8 @@
 
 .colunas_desc {
   flex-direction: column;
+  
+
 }
 
 .link_line {
@@ -195,6 +197,10 @@
   background: #C2C2BA;
   color: #405a63;
   padding: .3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+
   
 }
 
@@ -207,6 +213,8 @@
 .item1 {
   font-family: 'EB Garamond', serif;
   padding: .30rem;
+
+
 }
 
 .item2 {
